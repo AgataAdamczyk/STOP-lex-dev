@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+//---------------------------------------------
+//
+//  Table of Contents
+//
+//    1. Vendors
+//    2. Abstracts
+//    3. Pages specific
+//    4. Base
+//    5. Reusable components
+//    6. Layout global elements
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Vendors (external libraries setups)
+//---------------------------------------------
+@import 'vendors/bootstrap';
+@import 'vendors/cf7';
+
+//---------------------------------------------
+// 2. Abstracts (keyframes, variables, mixins etc)
+//---------------------------------------------
+@import 'abstracts/colors';
+@import 'abstracts/helpers';
+@import 'abstracts/variables';
+
+//---------------------------------------------
+// 3. Pages specific
+//---------------------------------------------
+@import 'pages/blog';
+@import 'pages/frontpage';
+@import 'pages/single-post';
+
+//---------------------------------------------
+// 4. Base
+//---------------------------------------------
+@import 'base/global';
+@import 'base/typography';
+
+//---------------------------------------------
+// 5. Reusable components (buttons, breadcrumbs etc)
+//---------------------------------------------
+@import 'components/button';
+
+//---------------------------------------------
+// 6. Layout global elements
+//---------------------------------------------
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/section';

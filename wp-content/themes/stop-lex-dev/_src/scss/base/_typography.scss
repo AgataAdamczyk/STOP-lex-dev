@@ -1,0 +1,210 @@
+//---------------------------------------------
+//
+//  Fonts
+//
+//    1. Font face
+//    2. Custom fonts classes
+//      2.1. Headers
+//      2.2. Paragraphs
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Font face
+//---------------------------------------------
+
+// --Red Hot Display
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/RedHatDisplay/RedHatDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/RedHatDisplay/RedHatDisplay-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/RedHatDisplay/RedHatDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('fonts/RedHatDisplay/RedHatDisplay-Black.ttf') format('truetype');
+}
+
+// --Mulish
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/Mulish/Mulish-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('fonts/Mulish/Mulish-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Road Race';
+  font-style: normal;
+  font-weight: 00;
+  font-display: swap;
+  src: url('fonts/Mulish/Mulish-ExtraBold.ttf') format('truetype');
+}
+
+//---------------------------------------------
+// 2. Custom fonts classes
+//
+//    2.1. Headers
+//---------------------------------------------
+
+.h1-headline {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  font-size: rem-calc(72);
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  @include media-breakpoint-down(lg) {
+    font-size: rem-calc(40);
+  }
+}
+
+@mixin h2-headline {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: rem-calc(40);
+  line-height: 140%;
+
+  @include media-breakpoint-down(lg) {
+    font-size: rem-calc(32);
+  }
+}
+
+.h2-headline {
+  @include h2-headline;
+}
+
+@mixin h3-headline {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: rem-calc(24);
+  line-height: 110%;
+  letter-spacing: 0.02em;
+
+  @include media-breakpoint-down(lg) {
+    line-height: 140%;
+  }
+}
+
+.h3-headline {
+  @include h3-headline;
+}
+
+.h4-headline {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: rem-calc(18);
+  line-height: 110%;
+  letter-spacing: 0.02em;
+}
+
+.h5-headline {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: rem-calc(14);
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+
+//---------------------------------------------
+//    2.2. Paragraphs
+//---------------------------------------------
+
+// --Red Hat Display
+
+@mixin body-text {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+  font-size: rem-calc(16);
+  line-height: 140%;
+  letter-spacing: 0.02em;
+
+  @include media-breakpoint-down(lg) {
+    font-size: rem-calc(14);
+  }
+}
+
+.body-text,
+.body-text p {
+  @include body-text;
+}
+
+@mixin body-text-500 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  font-size: rem-calc(16);
+  line-height: 171%;
+  letter-spacing: 0.02em;
+}
+
+.body-text-500,
+.body-text-500 p {
+  @include body-text-500;
+}
+
+.body-text-small,
+.body-text-small p {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+  font-size: rem-calc(14);
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+
+.body-text-small-500,
+.body-text-small-500 p {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  font-size: rem-calc(14);
+  line-height: 171%;
+  letter-spacing: 0.02em;
+}
+
+// --Mulish
+.mulish-text-large {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 800;
+  font-size: rem-calc(32);
+  line-height: 125.5%;
+  margin-bottom: rem-calc(2);
+}
+
+.mulish-text-small {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: rem-calc(14);
+  line-height: 125.5%;
+  color: $neutral-500;
+  margin-bottom: rem-calc(2);
+}

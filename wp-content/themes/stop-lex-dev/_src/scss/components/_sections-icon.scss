@@ -1,0 +1,121 @@
+.performance {
+  padding-left: rem-calc(40);
+  position: relative;
+
+  &__icon-wrapper {
+    position: absolute;
+    width: rem-calc(40);
+    height: auto;
+    padding-bottom: rem-calc(24);
+    background-color: $white;
+    top: rem-calc(-4);
+    left: rem-calc(-20);
+
+    &--box {
+      width: rem-calc(40);
+      height: rem-calc(40);
+      background-color: $primary-150;
+      border-radius: rem-calc(8);
+
+      img {
+        width: rem-calc(19);
+        height: rem-calc(19);
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: rem-calc(62);
+      left: rem-calc(-31);
+
+      &--box {
+        width: rem-calc(62);
+        height: rem-calc(62);
+
+        img {
+          width: rem-calc(30);
+          height: rem-calc(30);
+        }
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: rem-calc(1);
+    height: calc(100% + 124px);
+    background-color: $neutral-900;
+    left: 0;
+    bottom: rem-calc(-125);
+
+    @include media-breakpoint-up(lg) {
+      height: calc(100% + 164px);
+      bottom: rem-calc(-165);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-left: rem-calc(62);
+  }
+}
+
+.integrations {
+  padding-left: rem-calc(40);
+  position: relative;
+
+  &__icon-wrapper {
+    position: absolute;
+    width: rem-calc(40);
+    height: auto;
+    padding: rem-calc(24 0);
+    background-color: $white;
+    top: rem-calc(-28);
+    left: rem-calc(-20);
+
+    &--box {
+      width: rem-calc(40);
+      height: rem-calc(40);
+      background-color: $primary-150;
+      border-radius: rem-calc(8);
+
+      img {
+        width: rem-calc(19);
+        height: rem-calc(19);
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: rem-calc(62);
+      left: rem-calc(-31);
+
+      &--box {
+        width: rem-calc(62);
+        height: rem-calc(62);
+
+        img {
+          width: rem-calc(30);
+          height: rem-calc(30);
+        }
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: calc(100% + 200px);
+    background-color: $neutral-900;
+    left: 0;
+    top: rem-calc(-100);
+
+    @include media-breakpoint-up(lg) {
+      height: calc(100% + 300px);
+      top: rem-calc(-200);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-left: rem-calc(62);
+  }
+}

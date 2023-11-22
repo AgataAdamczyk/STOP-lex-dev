@@ -1,0 +1,9 @@
+.section {
+  padding-top: rem-calc(72);
+  padding-bottom: rem-calc(72);
+
+  @include media-breakpoint-up(md) {
+    padding-top: rem-calc(80);
+    padding-bottom: rem-calc(80);
+  }
+}

@@ -1,0 +1,114 @@
+//---------------------------------------------
+//
+//  Global styles
+//
+//---------------------------------------------
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  & > .main {
+    flex-grow: 1;
+  }
+}
+
+a {
+  color: $black-bg;
+  transition: color .3s ease-in-out;
+  text-decoration: none;
+
+  &:hover, &:focus, &:active {
+    color: $primary;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  &.lazy {
+    opacity: 0;
+  }
+
+  &:not(.initial) {
+    transition: opacity 1s;
+  }
+
+  &.initial,
+  &.loaded,
+  &.error {
+    opacity: 1;
+  }
+
+  &:not([src]) {
+    visibility: hidden;
+  }
+}
+
+button {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+  background: none;
+  color: inherit;
+}
+
+::selection {
+  color: $white;
+  background-color: $primary;
+}
+
+.container {
+  @include media-breakpoint-down(lg) {
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(20);
+  }
+}
+
+button:hover, button:active {
+  outline: none;
+}
+
+//---------------------------------------------
+// Text & background color - classes
+//---------------------------------------------
+
+.primary-bg {
+  background-color: $primary;
+}
+
+.primary-100-bg {
+  background-color: $primary-100;
+}
+
+.black-bg {
+  background-color: $black-bg;
+}
+
+.white-bg {
+  background-color: $white;
+}
+
+.neutral-200-bg {
+  background-color: $neutral-200;
+}
+
+.neutral-600-bg {
+  background-color: $neutral-600;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-neutral-300 {
+  color: $neutral-300;
+}
+
+.text-black-900 {
+  color: $black-900;
+}
