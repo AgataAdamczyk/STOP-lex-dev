@@ -19,7 +19,7 @@ $includes = array(
     '/customizer.php', // Custom options
     '/option-pages.php', // Load custom option pages
     '/walkers/vendor/class-wp-bootstrap-navwalker.php', // Load Bootstrap nav walker
-    '/custom-post-types/examples.php', // CTP: Example custom post types
+    '/custom-post-types/post.php', // CTP: Post custom post types
     '/pagination.php', // Custom Bootstrap Pagination
 );
 

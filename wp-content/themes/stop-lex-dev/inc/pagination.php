@@ -3,7 +3,7 @@
 /**
  * Custom Bootstrap Pagination
  *
- * @package Applover Theme
+ * @package CodeLauralian Theme
  */
 
 

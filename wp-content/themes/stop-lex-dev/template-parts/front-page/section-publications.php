@@ -43,7 +43,7 @@ $publications_btn = get_field('publications_btn');
 
             if ( $the_top_articles ->have_posts() ) :
                 while ( $the_top_articles ->have_posts() ) : $the_top_articles ->the_post(); ?>
-                    <div class="col-12 col-lg-6 mt-5">
+                    <div class="col-12 col-lg-6 mt-2 mt-lg-5">
                         <article class="post paragraph-s-normal d-flex flex-column justify-content-between">
                             <div class="post__thumbnail">
                                 <a class="d-block overflow-hidden" href="<?php esc_url( the_permalink() ); ?>">

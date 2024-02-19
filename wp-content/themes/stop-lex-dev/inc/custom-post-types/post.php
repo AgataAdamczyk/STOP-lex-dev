@@ -3,7 +3,7 @@
 /**
  * Default "Post" post type settings
  *
- * @package ApploverTheme
+ * @package CodeLauralian Theme
  */
 
 codelauralian_security_check();

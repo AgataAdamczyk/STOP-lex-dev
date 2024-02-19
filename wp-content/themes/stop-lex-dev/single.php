@@ -14,8 +14,8 @@ get_header();
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
                 <?php
-                if (have_posts()) :
-                    while (have_posts()) : the_post(); ?>
+                if ( have_posts() ) :
+                    while ( have_posts() ) : the_post(); ?>
                         <h2 class="h2-headline text-black-900 my-4">
                             <?= the_title(); ?>
                         </h2>
@@ -33,7 +33,6 @@ get_header();
                                 <?= get_the_date('d.m.Y'); ?>
                             </span>
                         </div>
-
 
                         <?php
                         $thumbnail = get_the_post_thumbnail($post, 'blog_post_lg');

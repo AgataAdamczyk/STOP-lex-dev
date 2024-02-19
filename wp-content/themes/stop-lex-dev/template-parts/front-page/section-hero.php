@@ -24,7 +24,7 @@ $socials = get_field('socials', 'options');
                 </div>
             <?php
             endif; ?>
-            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start ps-5">
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start ps-auto ps-lg-5 mt-4">
                 <?php
                 if ( $hero_text ) : ?>
                     <span class="body-text-500">
