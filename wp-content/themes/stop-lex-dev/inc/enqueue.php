@@ -1,8 +1,10 @@
 <?php
+
 /**
  * Register all styles and scripts
  *
- * @package ApploverTheme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 codelauralian_security_check();

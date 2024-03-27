@@ -20,6 +20,11 @@
             width: 100%;
             height: rem-calc(350);
             object-fit: cover;
+            transition: transform 0.3s ease;
+          }
+
+          &--img:hover {
+            transform: scale(1.1);
           }
 
           &--tags {

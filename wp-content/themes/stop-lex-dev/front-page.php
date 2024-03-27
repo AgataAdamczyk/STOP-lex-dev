@@ -1,8 +1,9 @@
 <?php
 /**
- * Template for home page
+ * Template for Front-page
  *
- * @package CodeLauralian Theme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 get_header();

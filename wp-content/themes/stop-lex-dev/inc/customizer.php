@@ -3,7 +3,8 @@
 /**
  * Register custom theme options displayed in customizer
  *
- * @package CodeLauralian Theme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 codelauralian_security_check();

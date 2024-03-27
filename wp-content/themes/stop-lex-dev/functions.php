@@ -2,7 +2,8 @@
 /**
  * Functions and definitions
  *
- * @package CodeLauralian Theme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 // Load custom helper functions - must go first

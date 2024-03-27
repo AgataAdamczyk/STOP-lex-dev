@@ -2,7 +2,8 @@
 /**
  * Contact section for Front-page
  *
- * @package CodeLauralian Theme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 codelauralian_security_check();
@@ -11,10 +12,9 @@ $contact_header = get_field('contact_header');
 $contact_text = get_field('contact_text');
 $contact_form_shortcode = get_field('contact_form_shortcode');
 
-$contact_phone = get_option('codelauralian_contact_phone');
-$contact_email = get_option('codelauralian_contact_email');
-$contact_address = get_option('codelauralian_contact_address');
-$contact_address_link = get_option('codelauralian_contact_address_link');
+$contact_phone = get_field('contact_phone', 'options');
+$contact_email = get_field('contact_email', 'options');
+$contact_address = get_field('contact_address', 'options');
 ?>
 
 <section class="section section--contact" id="contact">
@@ -53,8 +53,8 @@ $contact_address_link = get_option('codelauralian_contact_address_link');
                 endif;
                 if ( $contact_address ) : ?>
                     <div class="contact__info--address py-3 opacity-80">
-                        <a class="body-text-small-500 text-white" href="<?= esc_url( $contact_address_link ); ?>" target="_blank" rel="follow">
-                            <?= $contact_address; ?>
+                        <a class="body-text-small-500 text-white" href="<?= esc_url( $contact_address['url'] ); ?>" target="<?= esc_attr( $contact_address['target'] ); ?>">
+                            <?= $contact_address['title']; ?>
                         </a>
                     </div>
                 <?php

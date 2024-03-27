@@ -2,7 +2,8 @@
 /**
  * All publications section for Publications
  *
- * @package CodeLauralian Theme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 codelauralian_security_check();

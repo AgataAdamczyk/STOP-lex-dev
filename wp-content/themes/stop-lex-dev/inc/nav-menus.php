@@ -1,8 +1,10 @@
 <?php
+
 /**
  * All nav menus goes here
  *
- * @package ApploverTheme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 

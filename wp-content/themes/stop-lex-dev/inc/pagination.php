@@ -3,7 +3,8 @@
 /**
  * Custom Bootstrap Pagination
  *
- * @package CodeLauralian Theme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 

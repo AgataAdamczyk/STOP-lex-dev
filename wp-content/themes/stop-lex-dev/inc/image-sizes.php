@@ -1,8 +1,10 @@
 <?php
+
 /**
  * Custom image sizes goes here
  *
- * @package ApploverTheme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 codelauralian_security_check();

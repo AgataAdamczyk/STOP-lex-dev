@@ -2,8 +2,8 @@
 /**
  * Archive Pages Template
  *
- *
- * @package CodeLauralian Theme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 // Exit if accessed directly.

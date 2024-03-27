@@ -29,9 +29,9 @@
 //---------------------------------------------
 // 3. Pages specific
 //---------------------------------------------
-@import 'pages/blog';
 @import 'pages/error-404-page';
 @import 'pages/frontpage';
+@import 'pages/publications';
 @import 'pages/single-post';
 
 //---------------------------------------------
@@ -44,6 +44,7 @@
 // 5. Reusable components (buttons, breadcrumbs etc)
 //---------------------------------------------
 @import 'components/button';
+@import 'components/pagination';
 
 //---------------------------------------------
 // 6. Layout global elements

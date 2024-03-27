@@ -1,9 +1,9 @@
 <?php
-
 /**
  * Template for Publications posts
  *
- * @package CodeLauralian Theme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 get_header();

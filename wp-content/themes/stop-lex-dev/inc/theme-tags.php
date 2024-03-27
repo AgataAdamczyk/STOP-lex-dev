@@ -1,8 +1,9 @@
 <?php
+
 /**
- * @package CodeLauralian Theme
  *
- * @package codelauralian
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 // Exit if accessed directly.

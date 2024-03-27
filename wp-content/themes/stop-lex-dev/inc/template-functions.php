@@ -1,8 +1,10 @@
 <?php
+
 /**
  * Custom helper functions that can be used accross the theme
  *
- * @package CodeLauralian Theme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

@@ -1,8 +1,10 @@
 <?php
+
 /**
  * All theme suports goes here
  *
- * @package CodeLauralian Theme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 codelauralian_security_check();

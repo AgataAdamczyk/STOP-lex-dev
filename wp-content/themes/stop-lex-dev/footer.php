@@ -43,20 +43,19 @@ $socials = get_field('socials', 'options');
                                     <?php _e('Adres', 'codelauralian'); ?>
                                 </h4>
                                 <?php
-                                if ( $contact_address) : ?>
-                                    <p class="body-text-medium">
-                                        <?= $contact_address; ?>
-                                    </p>
+                                if ( $contact_address ) : ?>
+                                    <a class="body-text-medium" href="<?= esc_url( $contact_address['url'] ); ?>" target="<?= esc_attr( $contact_address['target'] ); ?>">
+                                        <?= $contact_address['title']; ?>
+                                    </a>
                                 <?php
                                 endif; ?>
                             </div>
                         </address>
                     </div>
 
+                    <?php
+                    if ( $socials ) : ?>
                     <div class="col-6 col-lg-3 d-flex flex-column">
-                        <h3 class="h3-headline txt-primary mb-4">
-                            <?php _e('', 'codelauralian'); ?>
-                        </h3>
                         <?php
                         foreach ( $socials as $social ) : ?>
                             <a class="d-inline-flex align-items-center body-text-500 mb-4" href="<?= esc_url( $social['link']['url'] ); ?>">
@@ -68,6 +67,8 @@ $socials = get_field('socials', 'options');
                         <?php
                         endforeach; ?>
                     </div>
+                    <?php
+                    endif; ?>
                 </div>
             </div>
 

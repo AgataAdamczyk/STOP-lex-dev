@@ -3,7 +3,8 @@
 /**
  * Default "Post" post type settings
  *
- * @package CodeLauralian Theme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 codelauralian_security_check();

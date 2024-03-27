@@ -2,7 +2,8 @@
 /**
  * Hero section for Front-page
  *
- * @package CodeLauralian Theme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 codelauralian_security_check();

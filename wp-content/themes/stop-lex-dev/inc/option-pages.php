@@ -3,7 +3,8 @@
 /**
  * Register custom option pages
  *
- * @package ApploverTheme
+ * @package WordPress
+ * @subpackage CodeLauralian Theme
  */
 
 codelauralian_security_check();
