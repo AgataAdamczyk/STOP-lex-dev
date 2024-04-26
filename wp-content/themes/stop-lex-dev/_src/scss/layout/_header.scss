@@ -1,0 +1,43 @@
+//---------------------------------------------
+//
+//  Header section
+//
+//    1. Navbar
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Navbar
+//---------------------------------------------
+
+.navbar {
+  width: 100%;
+  height: $navbar-height;
+  padding: rem-calc(24);
+  position: relative;
+  z-index: $zindex-sticky;
+
+  .nav-link {
+    @extend .body-text-500;
+    padding: 0;
+    width: rem-calc(181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+    text-transform: uppercase;
+    transition: color .3s ease-in-out;
+
+    &:hover, &:active, &:focus {
+      color: $primary;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 0;
+
+    .nav-link {
+      width: rem-calc(150);
+    }
+  }
+}

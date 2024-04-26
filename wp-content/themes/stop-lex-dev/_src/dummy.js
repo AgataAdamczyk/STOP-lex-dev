@@ -1,0 +1,1 @@
+// Dummy entry file for static assets

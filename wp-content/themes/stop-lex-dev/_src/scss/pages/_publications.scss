@@ -1,0 +1,38 @@
+.blog,
+.archive {
+  .section {
+    &--publications {
+      border-top:  1px solid $black-200;
+
+      .single-post {
+        &__thumbnail {
+          width: 100%;
+          height: rem-calc(350);
+          position: relative;
+
+          &--img {
+            width: 100%;
+            height: rem-calc(350);
+            object-fit: cover;
+            transition: transform 0.3s ease;
+          }
+
+          &--img:hover {
+            transform: scale(1.1);
+          }
+
+          &--tags {
+            position: absolute;
+            bottom: rem-calc(8);
+            left: rem-calc(8);
+
+            .single-tag {
+              background-color: $primary;
+              padding: rem-calc(4);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+//---------------------------------------------
+//
+//  Button
+//
+//---------------------------------------------
+
+.button {
+  outline: none;
+  width: auto;
+  height: rem-calc(48);
+  text-align: center;
+  background-color: $primary;
+  border: rem-calc(1) solid $primary;
+  border-radius: rem-calc(8);
+  padding: rem-calc(12 16);
+  @extend .body-text-small-500;
+  color: $white;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover, &:active, &:focus {
+    background-color: $primary-100;
+    border-color: $primary-100;
+    color: $white;
+  }
+
+  &--outline {
+    width: rem-calc(170);
+    background-color: transparent;
+    border: rem-calc(1.5) solid $primary-100;
+    color: $primary-100;
+
+    &:hover, &:active, &:focus {
+      background-color: $primary-100;
+      color: $white;
+    }
+  }
+}

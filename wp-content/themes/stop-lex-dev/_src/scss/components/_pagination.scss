@@ -1,0 +1,35 @@
+//---------------------------------------------
+//
+//  Pagination
+//
+//---------------------------------------------
+
+.pagination {
+  margin: rem-calc(24) 0;
+}
+
+.page {
+  &-link {
+    background-color: transparent;
+    border: 1px solid $neutral-500;
+    color: $black-bg;
+
+    &.current {
+      background-color: $primary;
+      border: 1px solid $primary;
+      color: $white;
+    }
+  }
+
+  &-link:hover {
+    background-color: $neutral-500;
+    border: 1px solid $neutral-500;
+    color: $primary;
+
+    &.current {
+      background-color: $primary-100;
+      border: 1px solid $primary-100;
+      color: $white;
+    }
+  }
+}

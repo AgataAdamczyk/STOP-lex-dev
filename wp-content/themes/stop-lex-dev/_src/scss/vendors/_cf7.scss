@@ -1,0 +1,83 @@
+//---------------------------------------------
+//
+// 1. Contact from 7
+//
+//---------------------------------------------
+
+.form-control {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  &:hover, &:active, &:focus {
+    box-shadow: none;
+    border: 1px solid #B22426;
+  }
+
+  &::placeholder {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  &::-moz-placeholder {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  &::-ms-input-placeholder {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  &::-webkit-input-placeholder {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+}
+
+textarea {
+  height: 140px;
+}
+
+.form-control,
+.wpcf7-not-valid-tip,
+.wpcf7 form .wpcf7-response-output {
+  font-family: 'Red Hat Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.wpcf7-not-valid-tip {
+  margin: 2px;
+  padding: 0;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  border-radius: 0;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.wpcf7-submit.button {
+  float: right;
+}
