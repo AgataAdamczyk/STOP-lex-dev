@@ -2,6 +2,8 @@
 
 Welcome to the Stop Lex Developer website!
 
+![Screenshot](https://github.com/AgataAdamczyk/STOP-lex-dev/blob/main/screenshot.png)
+
 ## About
 
 A very simple informational website for Wrocław residents who oppose overdevelopment
